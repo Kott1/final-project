@@ -3,6 +3,16 @@
     src: url(../fonts/raleway-regular.ttf);
 }
 
+@font-face {
+    font-family: raleway-medium;
+    src: url(../fonts/raleway-medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-extrabold;
+    src: url(../fonts/raleway-extrabold.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -47,6 +57,10 @@ body {
     color: #998675;
 }
 
+.logo-txt {
+    font-family: raleway-regular, Arial, sans-serif;
+}
+
 .menu {
     margin: 0 0 0 220px;
     padding: 20px 0 0 0;
@@ -69,6 +83,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
+    font-family: raleway-medium, arial, sans-serif;
 }
 
 .about-us {
@@ -203,10 +218,12 @@ body {
     line-height: 1.2;
     font-weight: 500;
     margin: 0;
+    font-family: raleway-medium, arial, sans-serif;
 }
 
 .heading:nth-child(2) {
     font-size: 52px;
+    font-family: raleway-extrabold, arial, sans-serif;
 }
 
 .text {
@@ -214,6 +231,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+    font-family: raleway-medium, arial, sans-serif;
 }
 
 .header-btn {
@@ -230,6 +248,7 @@ body {
     padding: 21px 39px;
     display: block;
     text-decoration: none;
+    font-family: raleway-extrabold, arial, sans-serif;
 }
 
 .header-btn:hover {
