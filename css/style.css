@@ -13,6 +13,16 @@
     src: url(../fonts/raleway-extrabold.ttf);
 }
 
+@font-face {
+    font-family: raleway-semibold;
+    src: url(../fonts/raleway-semibold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(../fonts/montserrat-light.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -25,7 +35,7 @@ body {
 .page-header {
     background-image: url(../img/header-photo.png);
     background-repeat: no-repeat;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 45px 0;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -58,7 +68,7 @@ body {
 }
 
 .logo-txt {
-    font-family: raleway-regular, Arial, sans-serif;
+    font-family: raleway-regular, arial, sans-serif;
 }
 
 .menu {
@@ -171,13 +181,17 @@ body {
     font-weight: 300;
 }
 
-.about-us {
+.menu-text:hover {
     color: #c7b299;
 }
 
 .cart-icon {
     margin: 0 0 0 60px;
     padding: 15px 0 0 0;
+}
+
+.cart-svg:hover {
+    fill: #c7b299;
 }
 
 .search-icon {
@@ -188,7 +202,7 @@ body {
     height: 30px;
     margin: 16px 0 0 27px;
     background-repeat: no-repeat;
-    border: none;
+    border: none ;
     background-color: transparent;
 }
 
@@ -292,4 +306,125 @@ body {
 
 .carusel-item:first-child {
     margin: 0;
+}
+
+.header-card-box {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 160px 0;
+}
+
+.card {
+    width: 265px;
+    text-align: center;
+    margin: 0 35px 0 0;
+} 
+
+.card:last-child {
+    margin: 0;
+}
+
+.card:hover .card-svg {
+    fill: #c7b299;
+}
+
+.card::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: #f1eee9;
+    display: block;
+    margin: 0 auto;
+}
+
+.card:hover::after {
+    background-color: #c7b299;
+}
+
+.card-heading {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    margin: 30px 0 20px 0;
+    width: 100%;
+    font-family: raleway-semibold, arial, sans-serif;
+
+}
+
+.card:hover .card-heading {
+    color: #c7b299;
+}
+
+.first-card-heading {
+    margin: 23px 0 20px 0;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin: 0 0 30px 0;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.realz {
+    padding: 85px 0 0 0;
+    background-color: #fbfaf8;
+}
+
+.realz-txt-wrp {
+    width: 100%;
+}
+
+.realz-heading {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    font-family: raleway-semibold, arial, sans-serif;
+}
+
+.realz-txt {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+    font-family: montserrat-light, arial, sans-serif;
+    width: 757px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.realz-img-wrp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.realz-img:first-child {
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    left: -1px;
+}
+
+.realz-img:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    right: -1px;
+}
+
+.realz-img:last-child {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
 }
