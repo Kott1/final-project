@@ -85,7 +85,7 @@ body {
     text-decoration: none;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     font-size: 34px;
     line-height: 1.2;
     font-weight: 400;
@@ -174,7 +174,7 @@ body {
 
 .header-content-wrp {
     text-align: center;
-    width: 589px;
+    max-width: 589px;
     margin: 0 0 328px 0;
 }
 
@@ -271,7 +271,7 @@ body {
 }
 
 .card {
-    width: 265px;
+    max-width: 265px;
     text-align: center;
     margin: 0 35px 0 0;
 } 
@@ -355,7 +355,7 @@ body {
     line-height: 28px;
     color: #8c8c8c;
     font-family: montserrat-light, arial, sans-serif;
-    width: 757px;
+    max-width: 757px;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -464,8 +464,7 @@ body {
 }
 
 .project-txt {
-    width: 757px;
-    margin: 0;
+    max-width: 757px;
     text-align: center;
     font-size: 16px;
     line-height: 28px;
@@ -684,8 +683,7 @@ body {
 }
 
 .video-item {
-    max-width: 1920px;
-    display: block;
+    width: 100%;
 }
 
 .video-wrp {
@@ -748,7 +746,7 @@ body {
 }
 
 .devices-wrp {
-    width: 657px;
+    max-width: 657px;
     padding-top: 116px;
     margin-right: 30px;
 }
@@ -846,4 +844,263 @@ body {
     text-transform: uppercase;
     color: #c7b299;
     margin-bottom: 30px;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 0 80px 0;
+}
+
+.post-heading {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: raleway-semibold, arial, sans-serif;
+}
+
+.post-txt {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    max-width: 757px;
+    text-align: center;
+    font-family: montserrat-light, arial, sans-serif;
+    margin: 40px 0 30px 0;
+}
+
+.post-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post-card {
+    max-width: 370px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.post-card:last-child {
+    margin: 0;
+}
+
+.post-card-date {
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    left: 19px;
+    z-index: 1;
+}
+
+.post-card-date-item {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    background-color: #363636;
+    border-radius: 3px 3px 0px 0px;
+    padding: 10px 0 9px 0;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.post-card:hover .post-card-date-item {
+    background-color: #c7b299;
+}
+
+.post-card-date-month {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+    background-color: #252525;
+    border-radius: 0px 0px 3px 3px;
+    padding: 8px 0 6px 0;
+    font-family: raleway-regular, arial, sans-serif;
+}
+
+.post-card:hover .post-card-date-month {
+    background-color: #a48d72;
+}
+
+.post-card-img {
+    display: block;
+}
+
+.post-card:hover .post-card-img {
+    filter: brightness(0.5);
+}
+
+.post-card-wrp {
+    padding: 30px;
+    background-color: rgba(119,119,119,0.0);
+    border: 1px solid #f8f8f8;
+}
+
+.post-card:hover .post-card-wrp {
+    background-color: #362f2d;
+    border-top: 1px solid #362f2d;
+}
+
+.post-card-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+    margin: 0;
+    font-family: raleway-medium, arial, sans-serif;
+}
+
+.post-card:hover .post-card-heading{
+    color: #c7b299;
+}
+
+.post-card-txt {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin: 19px 0 27px 0;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.post-card:hover .post-card-txt {
+    color: #fff;
+}
+
+.post-card-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #c7b299;
+    position: relative;
+    font-family: montserrat-light, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.post-card-link::before {
+    content: "";
+    border: 5px solid transparent;
+    border-left: 7px solid #c7b299;
+    position: absolute;
+    top: 4px;
+    left: 82px;
+}
+
+.pre-footer {
+    background-image: url(../img/pre-footer-img.png);
+    padding: 140px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    margin-right: 90px;
+}
+
+.footer-img:last-child {
+    margin: 0;
+}
+
+.main-footer {
+    background-color: #191919;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-card {
+    width: 260px;
+}
+
+.footer-txt {
+    margin: 29px 0 33px 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d1d1d1;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.footer-link::after {
+    content: "";
+    border: 5px solid transparent;
+    border-left: 7px solid #d1d1d1;;
+    position: absolute;
+    top: 4px;
+    left: 84px;
+}
+
+.footer-posts {
+    width: 272px;
+}
+
+.footer-post-heading {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 33px;
+    font-family: raleway-medium, arial, sans-serif;
+}
+
+.footer-post-date {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.footer-date_color {
+    color: #fff;
+}
+
+.footer-post-txt {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+    margin-top: 10px;
+    font-family: montserrat-light, arial, sans-serif;
+}
+
+.footer-txt_color {
+    color: #c7b299;
+}
+
+.footer-post-txt::after {
+    content: "";
+    height: 2px;
+    background-color: #252525;
+    display: block;
+    margin-top: 20px;
+}
+
+.footer-txt_no-line::after {
+    background-color: transparent;
 }
